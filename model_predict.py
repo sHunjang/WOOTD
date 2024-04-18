@@ -14,9 +14,13 @@ predic_img_path = '/Users/seunghunjang/Desktop/WOOTD/TestDataset/BGR_X'
 predic_BGR_img_path = '/Users/seunghunjang/Desktop/WOOTD/TestDataset/BGR'
 
 
+# Top Bottom Combination Path
+top_bottom_path = '/Users/seunghunjang/Desktop/WOOTD/Top_Bottom_Combination'
+
 # Save Dir
 result_path = '/Users/seunghunjang/Desktop/WOOTD/results/BGR_X/Predict'
 result_bgr_path = '/Users/seunghunjang/Desktop/WOOTD/results/BGR/BGR_Predict'
+result_combination_path = '/Users/seunghunjang/Desktop/WOOTD/results/Combination'
 
 
 # Model Test
@@ -24,4 +28,7 @@ result = model.predict(source=predic_img_path, save=True, save_txt=True, project
 
 
 # Model Test
-result_bgr = model.predict(source=predic_BGR_img_path, save=True, save_txt=True, project=result_bgr_path)
+result_bgr = model_BGR.predict(source=predic_BGR_img_path, save=True, save_txt=True, project=result_bgr_path)
+
+# Model Test
+result_combination = model_BGR.predict(source=top_bottom_path, save=True, save_txt=True, project=result_combination_path)
