@@ -2,11 +2,11 @@ from ultralytics import YOLO
 
 
 # Load pretrained model
-model = YOLO('/Users/seunghunjang/Desktop/WOOTD/results/BGR_X/Train_Models/train4/weights/best.pt')
+model = YOLO('/Users/seunghunjang/Desktop/WOOTD/results/BGR_X/Train_Models/train5/weights/best.pt')
 
 
 # Load Pretrained BGR Model
-model_BGR = YOLO('/Users/seunghunjang/Desktop/WOOTD/results/BGR/Train_BGR_Models/train4/weights/best.pt')
+model_BGR = YOLO('/Users/seunghunjang/Desktop/WOOTD/results/BGR/Train_BGR_Models/train5/weights/best.pt')
 
 
 # Predict Image Path
@@ -26,7 +26,6 @@ result_combination_path = '/Users/seunghunjang/Desktop/WOOTD/results/Combination
 
 # Model Test
 result = model.predict(source=predic_img_path, save=True, save_txt=True, project=result_path)
-
 
 # Model Test
 result_bgr = model_BGR.predict(source=predic_BGR_img_path, save=True, save_txt=True, project=result_bgr_path)

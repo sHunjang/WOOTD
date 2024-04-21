@@ -17,7 +17,7 @@ save_bgr_model_path = '/Users/seunghunjang/Desktop/WOOTD/results/BGR/Train_BGR_M
 
 
 # Model Train
-result = model.train(data=img_path, epochs=50, cache=True, imgsz=480, project=save_model_path)
+result = model.train(data=img_path, epochs=25, cache=True, imgsz=480, project=save_model_path)
 
 # BGR Model Train
-result_bgt = model_BGR.train(data=img_bgr_path, epochs=50, cache=True, imgsz=480, project=save_bgr_model_path)
+result_bgt = model_BGR.train(data=img_bgr_path, epochs=25, cache=True, imgsz=480, project=save_bgr_model_path)
