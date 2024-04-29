@@ -1,0 +1,5 @@
+0.52 Wannabe
+0.22 Padding
+0.15 Suit
+0.09 Sporty
+0.02 Random
