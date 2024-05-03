@@ -2,11 +2,11 @@ from ultralytics import YOLO
 
 
 # Load pretrained model Path
-model = YOLO('/Users/seunghunjang/Desktop/WOOTD/results/BGR_X/Train_Models/train/weights/best.pt')
+#model = YOLO('/Users/seunghunjang/Desktop/WOOTD/20240430/Train_Model/train/weights/best.pt')
 
 
 # Load Pretrained BGR Model Path
-model_BGR = YOLO('/Users/seunghunjang/Desktop/WOOTD/results/BGR/Train_BGR_Models/train12/weights/best.pt')
+model_BGR = YOLO('/Users/seunghunjang/Desktop/WOOTD/20240430/Train_Model/Epoch 25 Model 2/train/weights/best.pt')
 
 
 # Predict Image Path

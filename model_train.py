@@ -7,7 +7,7 @@ model_BGR = YOLO('yolov8n-cls_BGR.pt')
 
 # Image Path
 img_path = '/Users/seunghunjang/Desktop/WOOTD/Dataset'
-img_bgr_path = '/Users/seunghunjang/Desktop/WOOTD/Dataset_BGR2'
+img_bgr_path = '/Users/seunghunjang/Desktop/WOOTD/Dataset_BGR'
 
 # Result Path
 save_model_path = '/Users/seunghunjang/Desktop/WOOTD/results/BGR_X/Train_Models'
@@ -16,7 +16,7 @@ save_model_path = '/Users/seunghunjang/Desktop/WOOTD/results/BGR_X/Train_Models'
 save_bgr_model_path = '/Users/seunghunjang/Desktop/WOOTD/results/BGR/Train_BGR_Models'
 
 # 20240430 Test
-Model_path = '/Users/seunghunjang/Desktop/WOOTD/20240430/Train_Model'
+Model_path = '/Users/seunghunjang/Desktop/WOOTD/20240430/Train_Model/15 Model'
 
 
 # Model Train
