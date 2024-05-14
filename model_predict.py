@@ -6,7 +6,8 @@ from ultralytics import YOLO
 
 
 # Load Pretrained BGR Model Path
-model_BGR = YOLO('/Users/seunghunjang/Desktop/WOOTD/20240430/Train_Model/Epoch 25 Model 2/train/weights/best.pt')
+model_BGR_bestPT = YOLO('20240514/Train_Model/train6/weights/best.pt')
+model_BGR_lastPT = YOLO('20240514/Train_Model/train6/weights/last.pt')
 
 
 # Predict Image Path
@@ -18,7 +19,8 @@ predic_BGR_img_path = '/Users/seunghunjang/Desktop/WOOTD/TestDataset/BGR'
 top_bottom_path = '/Users/seunghunjang/Desktop/WOOTD/Top_Bottom_Combination'
 
 # 20240430~ Test
-test_path = '/Users/seunghunjang/Desktop/WOOTD/20240430/Predict_Results'
+test_path_best = '/Users/seunghunjang/Desktop/WOOTD/20240514/Predict_Results/bestPT'
+test_path_last = '/Users/seunghunjang/Desktop/WOOTD/20240514/Predict_Results/lastPT'
 
 # Save Dir Path
 result_path = '/Users/seunghunjang/Desktop/WOOTD/results/BGR_X/Predict'
@@ -33,4 +35,6 @@ result_combination_path = '/Users/seunghunjang/Desktop/WOOTD/results/Combination
 #result_bgr = model_BGR.predict(source=predic_BGR_img_path, save=True, save_txt=True, project=result_bgr_path)
 
 # Model Test Only Top/Bottom Clothes Combination
-result_combination = model_BGR.predict(source=top_bottom_path, save=True, save_txt=True, project=test_path)
+result_combination = model_BGR_bestPT.predict(source=top_bottom_path, save=True, save_txt=True, project=test_path_best)
+
+result_combination = model_BGR_lastPT.predict(source=top_bottom_path, save=True, save_txt=True, project=test_path_last)

@@ -15,12 +15,12 @@ save_model_path = '/Users/seunghunjang/Desktop/WOOTD/results/BGR_X/Train_Models'
 # BGR Model Save Path
 save_bgr_model_path = '/Users/seunghunjang/Desktop/WOOTD/results/BGR/Train_BGR_Models'
 
-# 20240430 Test
-Model_path = '/Users/seunghunjang/Desktop/WOOTD/20240430/Train_Model/15 Model'
+# 20240514 Test
+Model_path = '/Users/seunghunjang/Desktop/WOOTD/20240514/Train_Model'
 
 
 # Model Train
 #result = model.train(data=img_path, epochs=10, cache=True, imgsz=480, project=save_model_path)
 
 # BGR Model Train
-result_bgt = model_BGR.train(data=img_bgr_path, epochs=30, cache=True, imgsz=480, project=Model_path)
+result_bgt = model_BGR.train(data=img_bgr_path, epochs=10, cache=True, imgsz=480, project=Model_path)
