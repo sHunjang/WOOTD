@@ -11,8 +11,7 @@ model_BGR_bestPT = YOLO('20240514/Train_Model/train2/weights/best.pt')
 
 
 # Predict Image Path
-predic_img_path = '/Users/seunghunjang/Desktop/WOOTD/TestDataset/BGR_X'
-predic_BGR_img_path = '/Users/seunghunjang/Desktop/WOOTD/TestDataset/BGR'
+predic_BGR_img_path = '/Users/seunghunjang/Desktop/WOOTD/TestDataset'
 
 
 # Top Bottom Combination Path
