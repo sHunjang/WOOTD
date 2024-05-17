@@ -3,7 +3,7 @@ from ultralytics import YOLO
 
 
 # Load Pretrained BGR Model Path
-model = YOLO('')
+model = YOLO('results/BGR/Train_BGR_Models/train14/weights/best.pt')
 
 
 # Predict Image Path
@@ -19,4 +19,4 @@ test_path = 'test_Combination'
 
 
 # Model Test Only Top/Bottom Clothes Combination
-result_combination = model.predict(source=test_path, save=True, save_txt=True, project='test')
+result_combination = model.predict(source=top_bottom_path, save=True, save_txt=True, project='results/BGR/BGR_Predict')
