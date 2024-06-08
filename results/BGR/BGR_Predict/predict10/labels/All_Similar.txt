@@ -1,0 +1,5 @@
+0.34 Sporty
+0.24 Suit
+0.23 Casual
+0.13  Amekaji
+0.07 Wannabe

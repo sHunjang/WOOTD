@@ -1,7 +1,7 @@
 from ultralytics import YOLO
 
 # Model Load
-model_BGR = YOLO('yolov8n-cls_BGR.pt')
+model = YOLO('yolov8n-cls.pt')
 
 
 # Image Path
@@ -16,4 +16,4 @@ save_model_path = 'results/BGR/Train_BGR_Models'
 
 
 # BGR Model Train
-result_bgt = model_BGR.train(data=otherStyle_Dataset, epochs=50, cache=True, imgsz=480, project=save_model_path)
+result_bgt = model.train(data=img_bgr_path, epochs=40, cache=True, project=save_model_path)
